@@ -30,6 +30,14 @@ We will be using homebrew a lot so please install homebrew via the terminal:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
+<em>Please note that it might ask you for your password before the installation. Enter the password you used to log into your Mac.</em>
+
+Check if Homebrew is installed properly:
+
+```
+brew --version
+```
+
 #### Installing Git
 
 Open the terminal and use the following command:
@@ -38,7 +46,7 @@ Open the terminal and use the following command:
 brew install git
 ```
 
-Check if git is install properly:
+Check if git is installed properly:
 
 ```
 git --version
