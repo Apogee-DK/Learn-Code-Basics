@@ -52,7 +52,7 @@ TODO
 
 We will go over the following topics in this learn.code session:
 
-- Value types and assignment
+- Variable types and assignment
 - Conditions
 - Loops
 - Function
