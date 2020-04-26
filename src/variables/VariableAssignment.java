@@ -1,6 +1,7 @@
 package variables;
 
 import variables.exazades.VariableTypesTesuji;
+import variables.xavtru.VariableTypesXavtru;
 
 public class VariableAssignment {
 
@@ -16,16 +17,22 @@ public class VariableAssignment {
         // 1. Let's begin by diving into the syntax for assigning values to variable names
 
         // You will always need to specify the type and then the variable name, as such:
-        int value;
+        int valueOfInt;
+        double valueOfDouble;
+        float valueOfFloat;
 
         // You also have the option to assign a value to the variable name:
-        int variable1 = 1;
+        int variable1 = 1; // -2^32 ~ 2^32
         int variable2 = 2;
+        int variable3 = variable1; // variable3 = 1
+        short shortValue = 2;
+        long longValue = 23492l;
+
         double doubleValue = 2.00102310230123; // more precision
         float floatValue = 2.00343959f; // less precision
-        long longValue = 23492l;
-        boolean trueOrFalse = false;
-        char character = 'a';
+
+        boolean trueOrFalse = true; // false;
+        char character = 'a'; // !@#$%^&*()_+=`1234567890zxcvbnmasdfghjklqwertyuiop,./;'[]\
 
         // Variable has certain restrictions:
         // - Cannot start with a digit
@@ -35,7 +42,7 @@ public class VariableAssignment {
         // 2. Precision matters as types with more precision cannot be cast to a type with less precision
 
         // Assignment will fail as a double cannot be cast to an int as we will lose the decimal digits
-        // int doubleValue = 1.0;
+        // int doubleValue = 1.3; // You lose .3 -> 1
 
         // 3. Non-Primitive Types are reference data, so the variable do not hold the "value" which you define.
         // Instead, they hold the reference to the value.
