@@ -4,18 +4,36 @@ import variables.exazades.VariableTypesTesuji;
 
 public class VariableAssignment {
 
+    /*
+    Primitive types are the most basic data types in the Java language
+    int, float, long, double boolean, byte, short, char
+
+    Non-primitive types are reference data types. The variables do not hold
+    the value, instead they hold the reference (address to which the actual
+    is stored).
+     */
     public static void main(String[] args) {
-        // Primitive types
+        // Let's begin by diving into the syntax for assigning values to variable names
+        // You will always need to specify the type and then the variable name, as such:
+        int value;
+
+        // You also have the option to assign a value to the variable name:
         int variable1 = 1;
         int variable2 = 2;
-        // ...
-        int result = add(variable1, variable2); // 1 + 2
-        double doubleValue = 2.00102310230123 + result; // more precision
-        int subtraction = subtract(variable2, variable1);
-
+        double doubleValue = 2.00102310230123; // more precision
         float floatValue = 2.00343959f; // less precision
         long longValue = 23492l;
         boolean trueOrFalse = false;
+
+        // Precision matters as types with more precision cannot be cast to
+        // a type with less precision
+
+        // Assignment will fail as a double cannot be cast to an int as we will lose the decimal digits
+        // int doubleValue = 1.0;
+
+        // The variables can be used in functions to perform operations:
+        int result = add(variable1, variable2); // 1 + 2
+        int subtraction = subtract(variable2, variable1);
 
         // Non-Primitive Types
         String propertyStr = "This is a string" + " yeah i know";
