@@ -23,12 +23,25 @@ public class Calculator {
         this.version = version;
     }
 
+    // Functions can be created by defining the following values
+    // Accessibility:
+    // - public (function can be accessed anywhere)
+    // - private (function can only be accessed within the object)
+    // - protected (function can only be accessed within the same package)
+    // Static (optional)
+    // Data type: Specify the type of value to return (can be void)
+    // - void means that the function will not return anything
+    // Method name
+    // Parameters (type and name) - Unlimited number of arguments separated by commas. It can be empty as well.
+
+    // Function format
+    // <accessibility> <static [optional]> <data type> <method name>(<type> <name>, <type> <name>, ...)
     public int getVersion() {
+        // You will always need to write your logic within the scope of a function
+        // The scope is defined by the curly braces `{ }`
         return version;
     }
 
-    // public, private, protected
-    // static: You don't have to create the object to use it.
     public static int add(int x, int y) {
         return x + y;
     }
