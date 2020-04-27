@@ -2,15 +2,24 @@ package functions;
 
 public class Calculator {
 
-    public static void main(String [] args) {
-        int variable1 = 1;
-        int variable2 = 2;
+    public String name;
+    public int version;
 
-        int result = add(variable1, variable2); // 1 + 2
-        int subtraction = subtract(variable2, variable1);
+    public Calculator() {
+        this.version = 0;
     }
 
-    public static int add(int x, int y){
+    public Calculator(int version) {
+        this.version = version;
+    }
+
+    public int getVersion() {
+        return version;
+    }
+
+    // public, private, protected
+    // static: You don't have to create the object to use it.
+    public static int add(int x, int y) {
         return x + y;
     }
 

@@ -1,5 +1,7 @@
 package variables;
 
+import conditions.IfElseStatement;
+import functions.Calculator;
 import variables.exazades.VariableTypesTesuji;
 import variables.xavtru.VariableTypesXavtru;
 
@@ -56,5 +58,19 @@ public class VariableAssignment {
         // 5. Object creation
         // Using "new your-class-name()" will instantiate an object of that specific class. This is called a constructor.
         VariableTypesTesuji propertyVariableType = new VariableTypesTesuji();
+
+        int valuesA = 10;
+        int valuesB = 9;
+
+        int result = Calculator.subtract(10, 9);
+
+        Calculator calculatorDexter = new Calculator();
+        int addition = Calculator.add(1, 2); // 3
+        int versionDexter = calculatorDexter.getVersion(); // 0
+
+        Calculator calculatorPhil = new Calculator(10);
+        int versionPhil = calculatorPhil.getVersion(); // 10
+
+        IfElseStatement statement = new IfElseStatement();
     }
 }
