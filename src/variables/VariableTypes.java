@@ -17,6 +17,8 @@ public class VariableTypes {
         // Non-Primitive Types
         String propertyStr;
         int[] arrayOfInts;
+
+
         VariableTypesXavtru propertyVariableType;
     }
 }
