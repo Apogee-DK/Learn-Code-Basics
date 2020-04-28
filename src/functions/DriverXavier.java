@@ -6,7 +6,7 @@ public class DriverXavier {
     public static void main(String[] args)
     {
 
-        int x = 500;
+        int x = 10;
         int y = 5;
         double resultDivide = CalculatorXavier.divide(x,y);
 
@@ -21,7 +21,35 @@ public class DriverXavier {
 
     }
 
+public class newDriverXavier<resultMultiply> {
+    public void main(String[] args) {
+    }
+
+        int x = 25;
+        int y = 4;
+        double resultMultiply = CalculatorXavier.multiply(x,y);
+
+    if (resultMultiply > 50); {
+        System.out.println ("Number is greater than 50: " + resultMultiply);
+    }
+    else if (resultMultiply <  50)  {
+    System.out.println ("Number is less than 50: " + resultMultiply);
+
+    }
+
+    int result = CalculatorXavier.multiply(x,y);{
+        System.out.println(result);
+
+    }
+
 }
+
+
+
+
+
+
+
 
   // System.out.print("10");
   //int x = 10;

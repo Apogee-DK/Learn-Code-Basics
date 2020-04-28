@@ -30,7 +30,7 @@ public class CalculatorXavier {
   return x / y;
  }
 
- public int multiply(int x, int y) {
+ public static int multiply(int x, int y) {
   return x * y;
  }
 }
