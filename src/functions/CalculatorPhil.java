@@ -1,7 +1,7 @@
 package functions;
 
 public class CalculatorPhil {
-    public static String Zero;
+    public static String name ="ZeroX";
     public int version;
 
     public CalculatorPhil(int version) {
@@ -13,7 +13,7 @@ public class CalculatorPhil {
     }
 
     public static String getString() {
-        return Zero;
+        return name;
     }
 
     public int add (int x, int y) {

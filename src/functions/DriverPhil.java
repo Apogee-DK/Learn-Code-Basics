@@ -23,6 +23,9 @@ public class DriverPhil {
         int Version = calculatorZerox.getVersion();{
             System.out.println(Version);
         }
+        String Name = CalculatorPhil.getString();{
+            System.out.println(Name);
+        }
     }
 };
 
