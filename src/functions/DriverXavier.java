@@ -2,7 +2,7 @@ package functions;
 
 import java.sql.Driver;
 
-public class DriverXavier {
+public class DriverXavier<resultMultiply> {
     public static void main(String[] args)
     {
 
@@ -29,20 +29,27 @@ public class newDriverXavier<resultMultiply> {
         int y = 4;
         double resultMultiply = CalculatorXavier.multiply(x,y);
 
-    if (resultMultiply > 50); {
-        System.out.println ("Number is greater than 50: " + resultMultiply);
-    }
-    else if (resultMultiply <  50)  {
-    System.out.println ("Number is less than 50: " + resultMultiply);
-
-    }
-
-    int result = CalculatorXavier.multiply(x,y);{
+        CalculatorXavier calculatorXavier = new CalculatorXavier();
+        int result = calculatorXavier.multiply(x,y);{
         System.out.println(result);
-
-    }
-
+        }
 }
+
+
+    // if (resultMultiply > 50); {
+     //   System.out.println ("Number is greater than 50: " + resultMultiply);
+    }
+   // else if (resultMultiply <  50)  {
+   // System.out.println ("Number is less than 50: " + resultMultiply);
+
+   // }
+
+    //int result = CalculatorXavier.multiply(x,y);{
+    //    System.out.println(result);
+
+    //}
+
+//}
 
 
 
